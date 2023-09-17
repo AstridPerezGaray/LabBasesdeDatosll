@@ -1,0 +1,60 @@
+1.	Vendedor:
+•	SELECT: Permite al vendedor seleccionar información de las siguientes tablas:
+o	Clientes: Para acceder a información sobre los clientes a los que atiende.
+o	Productos: Para ver detalles sobre los productos disponibles y sus precios.
+o	Pedidos: Para consultar el estado de los pedidos realizados por los clientes.
+o	Distrito: Para seleccionar distrito del cliente.
+o	Municipio: Para seleccionar Municipio del cliente.
+o	Departamento: Al igual que las demás tablas para agregar las direcciones del cliente de sus pedidos.
+•	INSERT: Permite al vendedor insertar registros en la tabla "Pedidos" para registrar nuevos pedidos realizados por los clientes y en la tabla “Direcciones” para registrar datos del cliente.
+•	UPDATE: Permite al vendedor actualizar el estado de los pedidos en la tabla "Pedidos" cuando se procesen o entreguen.
+
+2.	Empleado de Almacén (Bodega):
+•	SELECT: Permite al empleado de almacén seleccionar información de las siguientes tablas:
+o	Productos: Para acceder a información sobre el inventario de productos y su disponibilidad en el almacén.
+o	Inventarios: Para consultar los registros de movimientos de inventario, como recepción de mercancía y preparación de pedidos.
+o	Proveedores: Para acceder a información sobre los proveedores de productos y su información de contacto.
+o	Categoría: Para acceder a la información sobre los productos.
+•	INSERT: Permite al empleado de almacén insertar registros en la tabla "Inventarios" y a la tabla “Categoría” para registrar la recepción de mercancías la preparación de pedidos.
+•	UPDATE: Permite al empleado de almacén actualizar registros en la tabla "Inventarios" cuando se realicen cambios en los niveles de inventario.
+
+3.	Gerente:
+•	SELECT: Permite al gerente de tienda seleccionar información de varias tablas para supervisar las operaciones de la tienda:
+o	Productos: Para acceder a información sobre el inventario de productos y su disponibilidad en el almacén.
+o	Pedidos: Para consultar el estado de los pedidos realizados por los clientes y el historial de ventas.
+o	Clientes: Para acceder a información sobre los clientes y su historial de compras.
+o	Empleados: Para ver detalles de los empleados y gestionar el personal de la tienda.
+•	INSERT: Permite al gerente de tienda insertar registros en las siguientes tablas:
+o	Empleados: Para registrar nuevos empleados y gestionar el personal de la tienda.
+o	Pedidos: Para registrar nuevos pedidos realizados por los clientes.
+•	UPDATE: Permite al gerente de tienda actualizar registros en varias tablas para tomar decisiones operativas y gestionar la tienda de manera eficiente:
+o	Empleados: Para realizar cambios en la programación y la gestión del personal.
+o	Pedidos: Para actualizar el estado de los pedidos y gestionar las entregas.
+o	Productos: Para realizar cambios en los detalles de los productos y los precios.
+•	DELETE: Permite eliminar pedidos incorrectos o duplicados en la tabla “Pedidos” y “Detalle Pedidos” o eliminar productos obsoletos de la tabla “Productos”.
+
+4.	Contador o Financiero:
+Los contadores o profesionales financieros se ocupan de la contabilidad, la gestión financiera y la presentación de informes fiscales.
+•	SELECT: Los permisos SELECT permiten al contador o financiero acceder a información financiera relevante en las siguientes tablas:
+o	Facturas: Para revisar y analizar las transacciones de ventas y compras.
+o	Detalle Facturas: Para obtener detalles sobre los elementos facturados y sus precios unitarios.
+o	Inventarios: Para verificar el valor del inventario y los registros de transacciones relacionadas.
+•	INSERT: Registrar transacciones financieras, como ingresos, gastos o ajustes contables, en la base de datos.
+o	Facturas: Para registrar transacciones de ventas y compras. En la tabla "Facturas", se registrarían las facturas emitidas a clientes o recibidas de proveedores.
+o	Detalle Facturas: Para registrar detalles específicos de los elementos facturados en una factura. Productos o servicios vendidos, sus cantidades, precios unitarios, subtotales y totales.
+•	UPDATE: Puede ser necesario en las siguientes tablas:
+o	Facturas: Si se requiere realizar correcciones en las facturas emitidas o recibidas, como cambios en los montos o descripciones.
+o	Detalle Facturas: Para realizar ajustes en los detalles de elementos facturados, como corregir cantidades, precios unitarios o subtotales.
+
+5.	Recursos Humanos:
+•	SELECT: Los permisos SELECT permiten al departamento de RRHH acceder a información esencial sobre los empleados y candidatos en las siguientes tablas:
+o	Empleados: Para acceder a información de contacto, historiales laborales y otra información relacionada con el empleado.
+o	Usuarios: Para gestionar cuentas de usuario y permisos.
+o	Distrito: Para seleccionar distrito de residencia del empleado.
+o	Municipio: Para seleccionar Municipio de residencia del empleado.
+o	Departamento: Al igual que las demás tablas para agregar las direcciones la dirección de vivienda del empleado.
+•	INSERT: Registrar nuevos empleados en la tabla de "Empleados" cuando se realiza una nueva contratación y a la tabla “Direcciones” para los datos de residencia del empleado.
+•	UPDATE: Actualizar registros de empleados, lo que podría incluir cambios en la información de contacto, cambios de posición, actualizaciones salariales y más.
+•	DELETE: Eliminar registros de empleados si se produce una terminación o baja.
+
+
