@@ -22,7 +22,7 @@ CREATE TABLE Distritos (
 CREATE TABLE Direcciones(
 	ID_Direccion INT PRIMARY KEY IDENTITY(1,1),
 	Linea1 VARCHAR(100) NOT NULL,
-	linea2 VARCHAR(100),
+	linea2 VARCHAR(100),   
 	ID_Distrito VARCHAR(5) NOT NULL,
 	CodigoPostal INT,
 	FOREIGN KEY (ID_Distrito) REFERENCES Distritos (ID_Distrito)
@@ -38,11 +38,11 @@ CREATE TABLE Empleados (
     ID_Empleado INT PRIMARY KEY IDENTITY(1, 1),
     NombresEmpleado VARCHAR(60) NOT NULL,
     ApellidosEmpleado VARCHAR(60) NOT NULL,
-	FechaNac DATE NOT NULL, 
+	FechaNac DATE NOT NULL, //
     Telefono VARCHAR(10) NOT NULL,
     Correo VARCHAR(100),
-    DUI VARCHAR(60) NOT NULL,
-    ISSS FLOAT NOT NULL,
+    DUI VARCHAR(10) NOT NULL,
+    ISSS INT (9)NOT NULL,
     ID_Direccion INT NOT NULL,
 	ID_TipoEmpleado INT NOT NULL,
     FOREIGN KEY (ID_Direccion) REFERENCES Direcciones (ID_Direccion),
@@ -54,7 +54,7 @@ CREATE TABLE Clientes (
     ApellidoCliente VARCHAR(60) NOT NULL,
     Telefono VARCHAR(10) NOT NULL,
     Correo VARCHAR(100),
-    DUI VARCHAR(60) NOT NULL,
+    DUI VARCHAR(10) NOT NULL,
 	TipoCliente VARCHAR (40) NOT NULL,
 	FechaRegistro DATE NOT NULL, 
     ID_Direccion INT NOT NULL,

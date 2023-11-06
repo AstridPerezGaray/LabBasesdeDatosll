@@ -347,7 +347,8 @@ insert into Distritos values
 	('USE08', 'Santa Elena', 'USE'),
 	('USE09', 'California', 'USE'),
 	('USE10', 'Ereguayquín', 'USE'),
-	('USO01', 'Jiquilisco', 'USO'),
+	('USO01', 'Jiquilisco', '
+	'),
 	('USO02', 'Puerto El Triunfo', 'USO'),
 	('USO03', 'San Agustín', 'USO'),
 	('USO04', 'San Francisco Javier', 'USO');
@@ -388,16 +389,18 @@ VALUES
 SELECT * FROM TipoEmpleado;
 
 	-- Inserciones en la tabla Empleados
-INSERT INTO Empleados (NombresEmpleado, ApellidosEmpleado, FechaNac, Telefono, Correo, DUI, ISSS, ID_Direccion)
+INSERT INTO Empleados (NombresEmpleado, ApellidosEmpleado, FechaNac, Telefono, Correo, DUI, ISSS, ID_Direccion, ID_TipoEmpleado)
 VALUES 
-    ('Juan Carlos', 'Pérez Gómez', '1990-05-15', '7771234567', 'juan@gmail.com', '1234789-2', 20230102030405, 1),
-    ('María José', 'Rodríguez López', '1985-09-23', '5559876543', 'maria.rodriguez@gmail.com', '04598764-3', 20221231040506, 2),
-    ('Roberto', 'Martínez García', '2001-11-10', '3331112222', 'roberto.martinez@gmail.com', '055111-3', 20211130050607, 3),
-    ('Ana', 'López Pérez', '1978-03-06', '4442223333', 'ana.lopez@gmail.com', '07522233-3', 20201029060708, 4),
-    ('Luisa', 'Sánchez Rodríguez', '1995-07-19', '6663339999', 'luisa.sanchez@gmail.com', '06533399-2', 20190928070809, 5),
-	('Julia', 'Sánchez Estrada', '1995-08-15', '6643339999', 'julia.sanchez@gmail.com', '06673399-2', 20180827080910, 5);
+    ('Juan Carlos', 'Pérez Gómez', '1990-05-15', '7771234567', 'juan@gmail.com', '12345678-9', 987654321, 1,1),
+    ('María José', 'Rodríguez López', '1985-09-23', '5559876543', 'maria.rodriguez@gmail.com', '12345678-9', 123456789, 2,2),
+    ('Roberto', 'Martínez García', '2001-11-10', '3331112222', 'roberto.martinez@gmail.com', '12345678-9', 123456789, 3,3),
+    ('Ana', 'López Pérez', '1978-03-06', '4442223333', 'ana.lopez@gmail.com', '12345678-9', 123456789, 4,4),
+    ('Luisa', 'Sánchez Rodríguez', '1995-07-19', '6663339999', 'luisa.sanchez@gmail.com', '87654321-0', 543210987, 5,5),
+	('Julia', 'Sánchez Estrada', '1995-08-15', '6643339999', 'julia.sanchez@gmail.com', '21098765-4', 345678901, 5,2);
 	
 	select * from Empleados;
+--DELETE FROM Empleados;
+
 	
 	-- Inserciones en la tabla Clientes
 INSERT INTO Clientes (NombreCliente, ApellidoCliente, Telefono, Correo, DUI,TipoCliente, FechaRegistro, ID_Direccion)
