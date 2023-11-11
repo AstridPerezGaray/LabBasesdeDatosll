@@ -38,11 +38,11 @@ CREATE TABLE Empleados (
     ID_Empleado INT PRIMARY KEY IDENTITY(1, 1),
     NombresEmpleado VARCHAR(60) NOT NULL,
     ApellidosEmpleado VARCHAR(60) NOT NULL,
-	FechaNac DATE NOT NULL, //
+	FechaNac DATE NOT NULL, 
     Telefono VARCHAR(10) NOT NULL,
     Correo VARCHAR(100),
     DUI VARCHAR(10) NOT NULL,
-    ISSS INT (9)NOT NULL,
+    ISSS INT NOT NULL,
     ID_Direccion INT NOT NULL,
 	ID_TipoEmpleado INT NOT NULL,
     FOREIGN KEY (ID_Direccion) REFERENCES Direcciones (ID_Direccion),
